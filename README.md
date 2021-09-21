@@ -1,2 +1,3 @@
-# dkube
-Project for dkube certification
+# CIFAR-10 - Object Recognition
+
+
