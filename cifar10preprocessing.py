@@ -14,6 +14,6 @@ import shutil
 source = path_labels
  
 # Destination path
-destination = "/opt/dkube/output"
+destination = "/opt/dkube/output/trainLabels.csv"
 
 shutil.copyfile(source, destination)
