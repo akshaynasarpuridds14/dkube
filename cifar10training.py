@@ -131,7 +131,7 @@ es = tf.keras.callbacks.EarlyStopping(monitor='val_loss', patience=15, verbose=1
 
 history = model.fit(train_generator, epochs=EPOCHS, validation_data=validation_generator, callbacks=[reduce_lr, es])
 
-version='1'
+version='2'
 model.save(MODEL_DIR+'/'+version)
 
 
