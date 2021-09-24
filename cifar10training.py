@@ -27,7 +27,7 @@ if not os.path.exists('output'):
     os.makedirs('output')
 if not os.path.exists('values'):
     os.makedirs('values')
-MODEL_DIR='output'
+MODEL_DIR='/opt/dkube/output'
 
 
 path=DATA_DIR+'/train'
