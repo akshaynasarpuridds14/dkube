@@ -20,7 +20,7 @@ from tensorflow.keras.layers import Conv2D, BatchNormalization, MaxPooling2D, Dr
 # Environment Variables and Directory Structure
 
 BATCH_SIZE = int(os.getenv('BATCHSIZE', 64))
-EPOCHS = int(os.getenv('EPOCHS', 1))
+EPOCHS = int(os.getenv('EPOCHS', 10))
 NUM_CLASSES = 10
 DATA_DIR='/opt/dkube/input'
 if not os.path.exists('output'):
