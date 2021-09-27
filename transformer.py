@@ -60,7 +60,9 @@ class ImageTransformer(kfserving.KFModel):
     def postprocess(self, inputs: List) -> List:
         prediction = np.argmax(inputs["outputs"][0])
         del inputs['outputs']
-        inputs["digit"] = int(prediction)
+        op = int(prediction)
+        class_names = ['airplane', 'automobile', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck']
+        inputs['class'] = class_names[op]
         return inputs
 
 if __name__ == "__main__":
